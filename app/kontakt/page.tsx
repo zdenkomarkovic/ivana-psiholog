@@ -1,11 +1,10 @@
 import ContactForm from "@/components/ContactForm";
 import ContactInfo from "@/components/ContactInfo";
-import Image from "next/image";
 
 export default function KontaktPage() {
   return (
     <main className="min-h-screen  pb-16">
-      <div className="bg-primary py-[53px]"> </div>
+      <div className="bg-primary py-10"> </div>
       <div className="max-w-6xl mx-auto py-8 px-8">
         <h1 className="text-4xl md:text-5xl font-bold text-primary text-center mb-16">
           Kontakt
