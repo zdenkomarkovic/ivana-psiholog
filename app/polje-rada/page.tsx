@@ -47,33 +47,37 @@ export default function PoljeRada() {
         imageSrc="/images/spiral-notepad-pen-green-fake-fern-leaves-white-background.jpg"
         imageAlt="Polje rada"
       />
-      <div className="max-w-[100rem] mx-auto px-8 py-16 space-y-16">
+      <div className=" mx-auto py-8 md:py-16 space-y-8 md:space-y-16">
         {" "}
-        <ProfileSection
-          imageSrc="/images/spiral-notepad-pen-green-fake-fern-leaves-white-background.jpg"
-          imageAlt="Psihoterapija"
-          imagePosition="left"
-          imageAspect=""
-          mobileImageFirst={true}
-        >
-          {" "}
-          <BulletList items={terapijskeTeme} />
-        </ProfileSection>
+        <div id="psihoterapija">
+          <ProfileSection
+            imageSrc="/images/landscape-palm-trees-pastel-colors.jpg"
+            imageAlt="Psihoterapija"
+            imagePosition="left"
+            imageAspect="aspect-square md:aspect-[10/13]"
+            mobileImageFirst={false}
+          >
+            {" "}
+            <BulletList items={terapijskeTeme} />
+          </ProfileSection>{" "}
+        </div>
         <div className="max-w-3xl mx-auto border-t border-primary"></div>
-        <ProfileSection
-          title=""
-          imageSrc="/images/corporate-business-handshake-business-partners.jpg"
-          imageAlt="Poslovno savetovanje"
-          imagePosition="right"
-          imageAspect=""
-          mobileImageFirst={true}
-        >
-          {" "}
-          <BulletList items={poslovnoSavetovanje} title={poslovniTitle} />
-        </ProfileSection>
+        <div id="poslovno-savetovanje">
+          <ProfileSection
+            title=""
+            imageSrc="/images/corporate-business-handshake-business-partners.jpg"
+            imageAlt="Poslovno savetovanje"
+            imagePosition="right"
+            imageAspect=""
+            mobileImageFirst={false}
+          >
+            {" "}
+            <BulletList items={poslovnoSavetovanje} title={poslovniTitle} />
+          </ProfileSection>{" "}
+        </div>
       </div>
       <div className="max-w-3xl mx-auto border-t border-primary"></div>
-      <div className="max-w-[100rem] mx-auto px-8 py-16">
+      <div className=" py-8 md:py-16">
         {/* <ServiceSection
           title="Poslovno savetovanje"
           imageSrc="/images/corporate-business-handshake-business-partners.jpg"
@@ -83,12 +87,12 @@ export default function PoljeRada() {
           <BulletList items={poslovnoSavetovanje} />
         </ServiceSection> */}
 
-        <section className="mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-primary mb-8 text-center">
+        <section id="Korporativni-well-being" className="mb-8 md:mb-16">
+          <h3 className="md:text-4xl px-4 md:px-8 font-bold text-primary mb-8 text-center">
             Korporativni well-being konsalting
-          </h2>
+          </h3>
 
-          <div className="mb-8">
+          <div className="mb-8 max-w-[80rem] mx-auto px-4 md:px-8">
             <QuoteBox>
               Well-being je ključ održivog rasta kompanije. Programi su
               osmišljeni tako da smanjuju stres, jačaju otpornost zaposlenih i
@@ -101,7 +105,7 @@ export default function PoljeRada() {
             imageSrc="/images/high-angle-minimalist-business-desk.jpg"
             imageAlt="psiholog ivana"
             imagePosition="left"
-            imageAspect=" aspect-square"
+            imageAspect="aspect-[10/11] "
             mobileImageFirst={true}
           >
             {" "}
@@ -109,32 +113,34 @@ export default function PoljeRada() {
           </ProfileSection>
         </section>
 
-        <div className="bg-primary text-primary-foreground p-8 rounded-lg text-center">
-          <p className="text-xl leading-relaxed">
-            Za sve detaljnije informacije o uslugama možete me kontaktirati
-            putem{" "}
-            <a
-              href="/kontakt"
-              className="underline font-semibold hover:text-accent transition-colors"
-            >
-              kontakt forme
-            </a>
-            , email-a{" "}
-            <a
-              href="mailto:ivanapericin@yahoo.com"
-              className="underline font-semibold hover:text-accent transition-colors"
-            >
-              ivanapericin@yahoo.com
-            </a>{" "}
-            ili telefona{" "}
-            <a
-              href="tel:+381628190812"
-              className="underline font-semibold hover:text-accent transition-colors"
-            >
-              +381 62 819 0812
-            </a>
-            .
-          </p>
+        <div className="max-w-[80rem] mx-auto px-4 md:px-8">
+          <div className="bg-primary text-primary-foreground p-3 md:p-6 rounded-lg text-center ">
+            <p className=" leading-relaxed">
+              Za sve detaljnije informacije o uslugama možete me kontaktirati
+              putem <br className="" />{" "}
+              <a
+                href="/kontakt"
+                className="underline font-semibold hover:text-accent transition-colors"
+              >
+                kontakt forme
+              </a>
+              , <br /> email-a{" "}
+              <a
+                href="mailto:ivanapericin@yahoo.com"
+                className="underline font-semibold hover:text-accent transition-colors"
+              >
+                ivanapericin@yahoo.com
+              </a>{" "}
+              <br /> ili telefona{" "}
+              <a
+                href="tel:+381628190812"
+                className="underline font-semibold hover:text-accent transition-colors"
+              >
+                +381 62 819 0812
+              </a>
+              .
+            </p>
+          </div>{" "}
         </div>
       </div>
     </main>

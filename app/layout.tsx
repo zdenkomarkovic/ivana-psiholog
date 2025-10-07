@@ -57,7 +57,7 @@ export default function RootLayout({
   return (
     <html lang="sr">
       <body
-        className={`${openSans.variable} ${moonTime.variable} antialiased text-muted-foreground bg-background text-base md:text-3xl font-serif`}
+        className={`${openSans.variable} ${moonTime.variable} antialiased text-primary bg-background text-base md:text-xl font-serif`}
       >
         <Header />
         {children}

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import AnimatedSection from "./AnimatedSection";
 
 export default function HeroSection() {
   return (
@@ -14,18 +15,21 @@ export default function HeroSection() {
         <div className="absolute inset-0 bg-primary/40" />
       </div>
 
-      <div className="relative px-8 w-[100rem] mx-auto md:mb-10">
-        <h1 className="text-5xl md:text-8xl text-background mb-6 border-b w-fit border-background">
-          Put ka sebi
-        </h1>
-        <p className="text-2xl md:text-5xl text-background mb-8 font-medium">
-          Psihološko savetovalište
-        </p>
-        <p className="text-xl md:text-4xl text-background/95 max-w-4xl mb-12 leading-relaxed">
-          Psihoterapija je prostor susreta – proces u kojem se dva sveta spajaju
-          ka zajedničkom cilju. Put ka znanju i uvidima koji nas dopunjuju,
-          upotpunjuju, isceljuju i osnažuju.
-        </p>
+      <div className="relative px-4 md:px-8 w-[80rem] mx-auto md:mb-">
+        <AnimatedSection>
+          {" "}
+          <h1 className="text-5xl md:text-8xl text-background mb-6">
+            Put ka sebi
+          </h1>
+          <p className="text-2xl md:text-5xl text-background mb-8 font-medium">
+            Psihološko savetovalište
+          </p>
+          <p className="text-xl md:text-3xl text-background/95 max-w-3xl mb-8 md:mb-12 leading-relaxed">
+            Psihoterapija je prostor susreta – proces u kojem se dva sveta
+            spajaju ka zajedničkom cilju. Put ka znanju i uvidima koji nas
+            dopunjuju, upotpunjuju, isceljuju i osnažuju.
+          </p>
+        </AnimatedSection>
       </div>
     </section>
   );

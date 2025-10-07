@@ -5,7 +5,7 @@ import Image from "next/image";
 export default function KontaktPage() {
   return (
     <main className="min-h-screen  pb-16">
-      <div className="bg-primary py-10"> </div>
+      <div className="bg-primary py-[53px]"> </div>
       <div className="max-w-6xl mx-auto py-8 px-8">
         <h1 className="text-4xl md:text-5xl font-bold text-primary text-center mb-16">
           Kontakt
@@ -25,15 +25,6 @@ export default function KontaktPage() {
             </div>
 
             <ContactInfo />
-
-            <div className="relative h-[300px] rounded-lg overflow-hidden shadow-lg">
-              <Image
-                src="/images/laptop-near-smartphone-watch-table.jpg"
-                alt="Kontakt"
-                fill
-                className="object-cover"
-              />
-            </div>
           </div>
 
           <div>

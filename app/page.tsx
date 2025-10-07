@@ -2,7 +2,7 @@ import HeroSection from "@/components/HeroSection";
 import AboutPreview from "@/components/AboutPreview";
 import ServicesSection from "@/components/ServicesSection";
 import BlogPreview from "@/components/BlogPreview";
-import CTASection from "@/components/CTASection";
+// import CTASection from "@/components/CTASection";
 
 export default function Home() {
   return (
@@ -11,7 +11,7 @@ export default function Home() {
       <AboutPreview />
       <ServicesSection />
       <BlogPreview />
-      <CTASection />
+      {/* <CTASection /> */}
     </main>
   );
 }

@@ -23,7 +23,7 @@ const mobTitleStyles = "text-lg py-2";
 const MobileMenu = () => (
   <Sheet>
     <SheetTrigger className="lg:hidden">
-      <MenuIcon className="text-background cursor-pointer" />
+      <MenuIcon className=" cursor-pointer" />
     </SheetTrigger>
     <SheetContent>
       <SheetHeader>
@@ -50,7 +50,7 @@ const MobileMenu = () => (
 );
 
 const DesktopNav = () => (
-  <ul className="hidden gap-12 lg:flex  text-2xl ">
+  <ul className="hidden gap-16 lg:flex ">
     {navList.map((item, index) => {
       return (
         <Link key={index} href={item.link}>
@@ -92,10 +92,8 @@ export default function Header() {
     >
       <nav
         className={`${
-          scrolled
-            ? ""
-            : "border-transparent md:border- md:border-b md:border-background"
-        } flex items-center justify-between px-8 py-4 max-w-[100rem] w-full`}
+          scrolled ? "" : "border-transparent  md:border-b md:border-background"
+        } flex items-center justify-between px-8 py-4 max-w-7xl w-full`}
       >
         <DesktopNav />
         <Link href="/" className="">
@@ -104,14 +102,14 @@ export default function Header() {
             alt="IVANA PSIHOLOG"
             width={240}
             height={50}
-            className={`w-[200px] md:w-[250px] ${scrolled ? "hidden" : ""}`}
+            className={`w-[170px] md:w-[200px] ${scrolled ? "hidden" : ""}`}
           />
           <Image
             src={logoblack}
             alt="IVANA PSIHOLOG"
             width={240}
             height={50}
-            className={`w-[200px] md:w-[250px] ${scrolled ? "" : "hidden"}`}
+            className={`w-[170px] md:w-[200px] ${scrolled ? "" : "hidden"}`}
           />
         </Link>
         <MobileMenu />
