@@ -99,7 +99,7 @@ export default function OMeni() {
             One nisu odvojene od društva u kojem postoje, već ga istovremeno
             oblikuju i bivaju oblikovane njime. I baš tu, u spoju čoveka i
             korporacije, pronalazim prostor za dublje razumevanje savremenog
-            života i njegovih izazova. Tu "leže" moja interesovanja.
+            života i njegovih izazova. Tu &quot;leže&quot; moja interesovanja.
           </p>
         </ProfileSection>
       </div>

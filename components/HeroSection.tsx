@@ -15,7 +15,7 @@ export default function HeroSection() {
       </div>
 
       <div className="relative px-8 w-[100rem] mx-auto md:mb-10">
-        <h1 className="text-5xl md:text-8xl text-background mb-6">
+        <h1 className="text-5xl md:text-8xl text-background mb-6 border-b w-fit border-background">
           Put ka sebi
         </h1>
         <p className="text-2xl md:text-5xl text-background mb-8 font-medium">

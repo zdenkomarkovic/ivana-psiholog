@@ -32,7 +32,7 @@ export default function Newsletter() {
         setStatus("error");
         setMessage("Došlo je do greške. Molimo pokušajte ponovo.");
       }
-    } catch (error) {
+    } catch {
       setStatus("error");
       setMessage("Došlo je do greške. Molimo pokušajte ponovo.");
     }

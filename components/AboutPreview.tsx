@@ -5,15 +5,15 @@ export default function AboutPreview() {
   return (
     <section className="py-20 bg-background">
       <div className="max-w-6xl mx-auto px-8">
-        <div className="grid  gap-12 items-center">
-          {/* <div className="relative h-[500px] rounded-lg overflow-hidden shadow-xl">
+        <div className="grid md:grid-cols-2 gap-12 items-center">
+          <div className="relative h-[500px] rounded-lg overflow-hidden shadow-xl">
             <Image
               src="/images/image0(1).jpeg"
               alt="Ivana Peričin"
               fill
               className="object-cover"
             />
-          </div> */}
+          </div>
 
           <div className="space-y-6">
             <h2 className="text-4xl md:text-5xl font-bold text-primary">

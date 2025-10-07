@@ -1,8 +1,6 @@
-import ServiceSection from "@/components/ServiceSection";
 import BulletList from "@/components/BulletList";
 import QuoteBox from "@/components/QuoteBox";
 import PageHero from "@/components/PageHero";
-import Image from "next/image";
 import ProfileSection from "@/components/ProfileSection";
 
 const terapijskeTeme = [
