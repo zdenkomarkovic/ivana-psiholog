@@ -53,7 +53,7 @@ export default function ContactForm() {
     <div className="">
       <Form {...form}>
         <form
-          className="grid grid-cols-3 items-center p-4 lg:p-10 shadow-xl shadow-primary rounded-xl"
+          className="grid grid-cols-3 items-center p-4 lg:p-10 shadow-lg shadow-primary rounded-lg"
           onSubmit={form.handleSubmit(onSubmit)}
         >
           <div className="col-span-3 flex flex-col gap-4 lg:col-span-3 lg:gap-8">
