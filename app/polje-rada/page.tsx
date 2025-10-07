@@ -19,7 +19,7 @@ const terapijskeTeme = [
   "Postavljanje ciljeva",
   "Donošenje odluka",
 ];
-const poslovniTitle = ["Poslovno savetovanje"];
+const poslovniTitle = "Poslovno savetovanje";
 
 const poslovnoSavetovanje = [
   "Karijerno usmeravanje",
