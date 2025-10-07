@@ -43,13 +43,13 @@ export default function TiranijaTrebanja() {
           <div className="space-y-6 text-lg leading-relaxed text-foreground">
             <p>
               Možda vam je poznat osećaj da odlažete započinjanje nečega važnog
-              jer čekate „pravi trenutak". Možda ste skloni da budete strogi
-              prema sebi zbog sitnih grešaka, iako drugi uopšte ne primećuju ono
-              što vas opterećuje. Možda ste išli sa jedne edukacije na drugu,
-              nadajući se da ćete se tek nakon sledeće osećati dovoljno spremno.
-              Možda i uspehe umanjujete, doživljavajući ih kao nešto što se
-              podrazumeva, dok svaki propust vidite kao dokaz da niste dovoljno
-              dobri.
+              jer čekate &quot;pravi trenutak&quot;. Možda ste skloni da budete
+              strogi prema sebi zbog sitnih grešaka, iako drugi uopšte ne
+              primećuju ono što vas opterećuje. Možda ste išli sa jedne
+              edukacije na drugu, nadajući se da ćete se tek nakon sledeće
+              osećati dovoljno spremno. Možda i uspehe umanjujete,
+              doživljavajući ih kao nešto što se podrazumeva, dok svaki propust
+              vidite kao dokaz da niste dovoljno dobri.
             </p>
 
             <p>
@@ -74,12 +74,12 @@ export default function TiranijaTrebanja() {
             </h2>
 
             <p>
-              Neki autori prave razliku između „pozitivnog" i „negativnog"
-              perfekcionizma. Pozitivan oblik se ogleda u visokim ambicijama
-              koje sebi postavljamo, ali i u sposobnosti da budemo zadovoljni
-              kada ostvarimo svoj cilj. Tada, iako težimo izvrsnosti, umemo da
-              zastanemo, priznamo svoj trud i osetimo smisao u onome što smo
-              postigli.
+              Neki autori prave razliku između &quot;pozitivnog&quot; i
+              „negativnog" perfekcionizma. Pozitivan oblik se ogleda u visokim
+              ambicijama koje sebi postavljamo, ali i u sposobnosti da budemo
+              zadovoljni kada ostvarimo svoj cilj. Tada, iako težimo izvrsnosti,
+              umemo da zastanemo, priznamo svoj trud i osetimo smisao u onome
+              što smo postigli.
             </p>
 
             <p>
@@ -88,24 +88,24 @@ export default function TiranijaTrebanja() {
               dovoljno dobro. Naša vrednost počinje da se meri kroz rezultate,
               produktivnost i postignuća, a kako su kriterijumi često nerealni,
               zadovoljstvo postaje nedostižno. Čak i kada uradimo nešto uspešno,
-              u mislima se javi rečenica: „moglo je i bolje".
+              u mislima se javi rečenica: &quot;moglo je i bolje&quot;.
             </p>
 
             <p>
               Ovakav unutrašnji pritisak stvara napetost i osećaj nezadovoljstva
-              sobom. Zato se negativni perfekcionizam ponekad naziva i „tiranijom
-              trebanja" – jer nas neumorno opsedaju misli da smo trebali više,
-              bolje, drugačije. Iz straha od greške ili neuspeha često odlažemo
-              važne zadatke, što može dovesti do hronične prokrastinacije. Na
-              taj način, perfekcionizam koji je zamišljen da nas pokreće,
-              zapravo nas zarobljava i udaljava od lakoće i spontanosti u
-              životu.
+              sobom. Zato se negativni perfekcionizam ponekad naziva i
+              &quot;tiranijom trebanja&quot; – jer nas neumorno opsedaju misli
+              da smo trebali više, bolje, drugačije. Iz straha od greške ili
+              neuspeha često odlažemo važne zadatke, što može dovesti do
+              hronične prokrastinacije. Na taj način, perfekcionizam koji je
+              zamišljen da nas pokreće, zapravo nas zarobljava i udaljava od
+              lakoće i spontanosti u životu.
             </p>
 
             <p>
               Šta znači hronična prokrastinacija u ovom kontekstu? Stalno
               odlaganje započinjanja jer imamo osećaj da nam fali još samo malo
-              da se sve „složi" da bi bilo dovoljno dobro da počnemo.
+              da se sve &quot;složi&quot; da bi bilo dovoljno dobro da počnemo.
             </p>
 
             <h2 className="text-3xl font-bold text-primary mt-12 mb-6">
@@ -125,8 +125,8 @@ export default function TiranijaTrebanja() {
                 stroga očekivanja.
               </li>
               <li>
-                Situacije u kojima su roditelji postavljali vrlo visoke standarde
-                i očekivali od nas da ih ispunimo.
+                Situacije u kojima su roditelji postavljali vrlo visoke
+                standarde i očekivali od nas da ih ispunimo.
               </li>
               <li>
                 Nedostatak dosledne podrške – nekada je bilo topline i
@@ -142,8 +142,8 @@ export default function TiranijaTrebanja() {
             <p>
               Takva rana iskustva ostavljaju trag. Naučimo da verujemo kako
               ljubav, prihvatanje ili sigurnost zavise od toga koliko smo
-              „dobri" i koliko ispunjavamo tuđe kriterijume. Na taj način
-              perfekcionizam postaje strategija preživljavanja – način da
+              &quot;dobri&quot; i koliko ispunjavamo tuđe kriterijume. Na taj
+              način perfekcionizam postaje strategija preživljavanja – način da
               zaslužimo mesto i vrednost u očima drugih.
             </p>
 
@@ -164,7 +164,7 @@ export default function TiranijaTrebanja() {
               napuste. Jedan od razloga je osećaj posebne vrednosti koji
               perfekcionizam daje – koliko god da je ponekad iscrpljujuće živeti
               sa njim, on deluje kao deo našeg identiteta, kao nešto što nas
-              izdvaja i čini „dovoljnima".
+              izdvaja i čini &quot;dovoljnima&quot;.
             </p>
 
             <h2 className="text-3xl font-bold text-primary mt-12 mb-6">
@@ -174,12 +174,12 @@ export default function TiranijaTrebanja() {
             <p>
               Danas se perfekcionizam dodatno hrani spoljašnjim uticajima. Iako
               potiče iz ranih iskustava, on se lako održava i produbljuje kroz
-              društvene mreže i slike idealnog života koje one nude.
-              Svakodnevno smo izloženi nerealnim modelima – bilo da su u pitanju
-              poznate ličnosti ili influenseri. Čak i kada racionalno znamo da
-              te slike nisu stvarne, konstantno ponavljanje i intenzitet poruka
-              često prevladaju nad našom svesnošću. U tim trenucima lako
-              zaboravljamo da se iza „savršene" spoljašnjosti krije isto tako
+              društvene mreže i slike idealnog života koje one nude. Svakodnevno
+              smo izloženi nerealnim modelima – bilo da su u pitanju poznate
+              ličnosti ili influenseri. Čak i kada racionalno znamo da te slike
+              nisu stvarne, konstantno ponavljanje i intenzitet poruka često
+              prevladaju nad našom svesnošću. U tim trenucima lako zaboravljamo
+              da se iza &quot;savršene&quot; spoljašnjosti krije isto tako
               nesavršeno, ljudsko biće.
             </p>
 
@@ -200,10 +200,10 @@ export default function TiranijaTrebanja() {
               iluzije, često podstaknute marketingom i industrijama koje od toga
               imaju korist. Čovek u svojoj suštini ne raste u izolaciji, već
               kroz odnose, kroz kontakt sa drugima. Zato mnogi, iako ulažu
-              ogromnu energiju u „rad na sebi" i traganje za savršenstvom,
-              ostaju prazni i sve češće se suočavaju sa osećajem bespomoćnosti
-              jer šta god da urade vraćaju se na osećaj praznine. U stvari sve
-              vreme tragaju za sobom u pogrešnom pravcu.
+              ogromnu energiju u &quot;rad na sebi&quot; i traganje za
+              savršenstvom, ostaju prazni i sve češće se suočavaju sa osećajem
+              bespomoćnosti jer šta god da urade vraćaju se na osećaj praznine.
+              U stvari sve vreme tragaju za sobom u pogrešnom pravcu.
             </p>
 
             <h2 className="text-3xl font-bold text-primary mt-12 mb-6">
@@ -231,8 +231,8 @@ export default function TiranijaTrebanja() {
               </li>
               <li>
                 Vraćati fokus na sopstvene ciljeve – razlikovati produktivnost
-                od perfekcionizma (npr. pitati se: „da li ovo što sada radim
-                zaista vodi mom cilju?").
+                od perfekcionizma (npr. pitati se: &quot;da li ovo što sada
+                radim zaista vodi mom cilju?&quot;).
               </li>
               <li>
                 Prepoznati i relativizovati negativne misli koje se javljaju
@@ -245,9 +245,9 @@ export default function TiranijaTrebanja() {
                 rad i osećaj lične vrednosti.
               </li>
               <li>
-                Odrediti šta za nas znači „zdrava sredina" – zapisati realne
-                kriterijume i vežbati da se njima vodimo (čak i ako se u početku
-                javi osećaj da radimo „nedovoljno dobro").
+                Odrediti šta za nas znači &quot;zdrava sredina&quot; – zapisati
+                realne kriterijume i vežbati da se njima vodimo (čak i ako se u
+                početku javi osećaj da radimo &quot;nedovoljno dobro&quot;).
               </li>
               <li>
                 Nagraditi sebe posle svakog malog koraka ka popuštanju tiranije
@@ -260,10 +260,10 @@ export default function TiranijaTrebanja() {
                 Perfekcionizam varljivo izgleda kao vrlina, ali ispod te maske
                 često krije težinu. On nas može udaljiti od osećaja ispunjenosti
                 i zadovoljstva sopstvenim životom, jer nas stalno vraća u
-                začarani krug „moram" i „trebalo je". Razumevanjem njegovog
-                porekla i osvešćivanjem pritisaka koje nosimo – iz porodice,
-                društva i sopstvenih unutrašnjih kriterijuma – otvaramo
-                mogućnost da živimo drugačije.
+                začarani krug &quot;moram&quot; i &quot;trebalo je&quot;.
+                Razumevanjem njegovog porekla i osvešćivanjem pritisaka koje
+                nosimo – iz porodice, društva i sopstvenih unutrašnjih
+                kriterijuma – otvaramo mogućnost da živimo drugačije.
               </p>
             </div>
 
