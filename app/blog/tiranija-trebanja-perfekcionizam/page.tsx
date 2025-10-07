@@ -75,11 +75,11 @@ export default function TiranijaTrebanja() {
 
             <p>
               Neki autori prave razliku između &quot;pozitivnog&quot; i
-              „negativnog" perfekcionizma. Pozitivan oblik se ogleda u visokim
-              ambicijama koje sebi postavljamo, ali i u sposobnosti da budemo
-              zadovoljni kada ostvarimo svoj cilj. Tada, iako težimo izvrsnosti,
-              umemo da zastanemo, priznamo svoj trud i osetimo smisao u onome
-              što smo postigli.
+              &quot;negativnog&quot; perfekcionizma. Pozitivan oblik se ogleda u
+              visokim ambicijama koje sebi postavljamo, ali i u sposobnosti da
+              budemo zadovoljni kada ostvarimo svoj cilj. Tada, iako težimo
+              izvrsnosti, umemo da zastanemo, priznamo svoj trud i osetimo
+              smisao u onome što smo postigli.
             </p>
 
             <p>
