@@ -18,8 +18,8 @@ export default function BlogCard({
 }: BlogCardProps) {
   return (
     <Link href={`/blog/${slug}`} className="group">
-      <article className="bg-card rounded-lg overflow-hidden shadow-lg border border-border hover:shadow-xl transition-shadow">
-        <div className="grid md:grid-cols-2 gap-0">
+      <article className="bg-card rounded-lg overflow-hidden shadow-lg border border-border hover:shadow-xl transition-shadow h-full">
+        <div className="grid md:grid-cols-2 gap-0 h-full">
           <div className="relative h-[300px] md:h-full">
             <Image
               src={slika}
@@ -29,18 +29,18 @@ export default function BlogCard({
             />
           </div>
 
-          <div className="p-8 flex flex-col justify-center">
-            <p className="text-sm text-muted-foreground mb-3">
+          <div className="p-4 flex flex-col justify-center">
+            <p className="text-sm text-muted-foreground mb-1">
               {new Date(datum).toLocaleDateString("sr-RS", {
                 year: "numeric",
                 month: "long",
                 day: "numeric",
               })}
             </p>
-            <h2 className="text-3xl font-bold text-primary mb-4 group-hover:text-secondary transition-colors text-left">
+            <h2 className="text-2xl font-bold text-primary mb-3 group-hover:text-secondary transition-colors text-left">
               {naslov}
             </h2>
-            <p className="text-lg leading-relaxed mb-6">{opis}</p>
+            <p className="text-lg mb-4">{opis}</p>
             <span className="text-primary font-semibold inline-flex items-center gap-2 group-hover:gap-4 transition-all">
               Pročitaj više
               <svg

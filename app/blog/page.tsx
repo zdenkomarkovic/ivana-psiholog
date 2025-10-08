@@ -33,20 +33,25 @@ export default async function Blog() {
   const blogs = await getBlogs();
 
   return (
-    <main className="min-h-screen pt-24 pb-16">
-      <div className="max-w-6xl mx-auto px-8">
+    <main className="min-h-screen pb-16">
+      <div className="bg-primary py-[42px] md:py-[45px]"> </div>
+      <div className="max-w-[80rem] mx-auto px-4 md:px-8 py-12">
         <h1 className="text-4xl md:text-5xl font-bold text-primary text-center mb-16">
           Blog
         </h1>
 
-        <div className="grid gap-12">
+        <div className="grid grid-cols-2 gap-12">
           {blogs.map((blog) => (
             <BlogCard
               key={blog.slug.current}
               naslov={blog.title}
               slug={blog.slug.current}
               opis={blog.excerpt || ""}
-              slika={blog.mainImage ? urlFor(blog.mainImage).width(800).url() : "/images/arrangement-desk-elements-with-empty-notepad.jpg"}
+              slika={
+                blog.mainImage
+                  ? urlFor(blog.mainImage).width(800).url()
+                  : "/images/arrangement-desk-elements-with-empty-notepad.jpg"
+              }
               datum={new Date(blog.publishedAt).toLocaleDateString("sr-RS")}
             />
           ))}

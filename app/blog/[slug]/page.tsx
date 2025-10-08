@@ -70,7 +70,7 @@ export default async function BlogPost({
           if (child._type === "span" && typeof child.text === "string") {
             return {
               ...child,
-              text: child.text.replace(/\n+/g, " ").trim(),
+              text: child.text.replace(/\n/g, " "),
             };
           }
           return child;
@@ -135,6 +135,11 @@ export default async function BlogPost({
                     </h2>
                   ),
                   normal: ({ children }) => <p className=" ">{children}</p>,
+                },
+                marks: {
+                  strong: ({ children }) => <strong className="font-bold">{children}</strong>,
+                  em: ({ children }) => <em className="italic">{children}</em>,
+                  underline: ({ children }) => <u className="underline">{children}</u>,
                 },
                 list: {
                   bullet: ({ children }) => (

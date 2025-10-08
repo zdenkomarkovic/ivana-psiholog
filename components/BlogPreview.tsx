@@ -62,12 +62,10 @@ export default async function BlogPreview() {
                   </div>
 
                   <div className="p-4 flex flex-col justify-center">
-                    <h3 className="text-2xl font-bold text-primary mb-4 group-hover:text-secondary transition-colors text-left">
+                    <h3 className="text-2xl font-bold text-primary mb-3 group-hover:text-secondary transition-colors text-left">
                       {blog.title}
                     </h3>
-                    <p className="text-lg leading-relaxed mb-6">
-                      {blog.excerpt}
-                    </p>
+                    <p className="text-lg  mb-4">{blog.excerpt}</p>
                     <span className="text-primary font-semibold inline-flex items-center gap-2 group-hover:gap-4 transition-all">
                       Pročitaj više
                       <svg
