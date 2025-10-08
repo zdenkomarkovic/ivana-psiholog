@@ -1,16 +1,30 @@
 import BlogCard from "@/components/BlogCard";
+import { client } from "@/lib/sanity";
+import { urlFor } from "@/lib/sanityImage";
 
-const clanci = [
-  {
-    naslov: "Tiranija trebanja - perfekcionizam",
-    slug: "tiranija-trebanja-perfekcionizam",
-    opis: "Perfekcionizam može delovati kao snaga – ambicija, težnja ka izvrsnosti. Ipak, ispod tog sloja često se krije težina: osećaj da nikada nismo dovoljno dobri.",
-    slika: "/images/arrangement-desk-elements-with-empty-notepad.jpg",
-    datum: "2025-01-15",
-  },
-];
+interface Blog {
+  title: string;
+  slug: { current: string };
+  excerpt: string;
+  mainImage: any;
+  publishedAt: string;
+}
 
-export default function Blog() {
+async function getBlogs(): Promise<Blog[]> {
+  const query = `*[_type == "blog"] | order(publishedAt desc) {
+    title,
+    slug,
+    excerpt,
+    mainImage,
+    publishedAt
+  }`;
+
+  return await client.fetch(query);
+}
+
+export default async function Blog() {
+  const blogs = await getBlogs();
+
   return (
     <main className="min-h-screen pt-24 pb-16">
       <div className="max-w-6xl mx-auto px-8">
@@ -19,14 +33,14 @@ export default function Blog() {
         </h1>
 
         <div className="grid gap-12">
-          {clanci.map((clanak) => (
+          {blogs.map((blog) => (
             <BlogCard
-              key={clanak.slug}
-              naslov={clanak.naslov}
-              slug={clanak.slug}
-              opis={clanak.opis}
-              slika={clanak.slika}
-              datum={clanak.datum}
+              key={blog.slug.current}
+              naslov={blog.title}
+              slug={blog.slug.current}
+              opis={blog.excerpt || ""}
+              slika={blog.mainImage ? urlFor(blog.mainImage).width(800).url() : "/images/arrangement-desk-elements-with-empty-notepad.jpg"}
+              datum={new Date(blog.publishedAt).toLocaleDateString("sr-RS")}
             />
           ))}
         </div>

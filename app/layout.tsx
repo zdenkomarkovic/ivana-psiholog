@@ -55,9 +55,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="sr">
+    <html lang="sr" suppressHydrationWarning>
       <body
         className={`${openSans.variable} ${moonTime.variable} antialiased text-primary bg-background text-base md:text-xl font-serif`}
+        suppressHydrationWarning
       >
         <Header />
         {children}
