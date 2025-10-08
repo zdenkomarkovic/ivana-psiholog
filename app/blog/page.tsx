@@ -2,11 +2,18 @@ import BlogCard from "@/components/BlogCard";
 import { client } from "@/lib/sanity";
 import { urlFor } from "@/lib/sanityImage";
 
+interface SanityImage {
+  asset: {
+    _ref: string;
+    _type: string;
+  };
+}
+
 interface Blog {
   title: string;
   slug: { current: string };
   excerpt: string;
-  mainImage: any;
+  mainImage: SanityImage;
   publishedAt: string;
 }
 

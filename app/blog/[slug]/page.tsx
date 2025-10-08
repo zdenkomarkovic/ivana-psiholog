@@ -5,13 +5,35 @@ import { urlFor } from "@/lib/sanityImage";
 import { PortableText } from "@portabletext/react";
 import { notFound } from "next/navigation";
 
+interface SanityImage {
+  asset: {
+    _ref: string;
+    _type: string;
+  };
+}
+
 interface Blog {
   title: string;
   slug: { current: string };
   excerpt: string;
-  mainImage: any;
+  mainImage: SanityImage;
   publishedAt: string;
-  content: any[];
+  content: Block[];
+}
+
+interface Block {
+  _key: string;
+  _type: string;
+  children?: Child[];
+  style?: string;
+  [key: string]: unknown;
+}
+
+interface Child {
+  _key: string;
+  _type: string;
+  text?: string;
+  [key: string]: unknown;
 }
 
 async function getBlog(slug: string): Promise<Blog | null> {
@@ -40,11 +62,11 @@ export default async function BlogPost({
   }
 
   // Ukloni hard line breaks UNUTAR svakog bloka (pasusa), ali ne između blokova
-  const processedContent = blog.content.map((block: any) => {
+  const processedContent = blog.content.map((block) => {
     if (block._type === "block" && block.children) {
       return {
         ...block,
-        children: block.children.map((child: any) => {
+        children: block.children.map((child) => {
           if (child._type === "span" && typeof child.text === "string") {
             return {
               ...child,
