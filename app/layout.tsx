@@ -1,7 +1,4 @@
-import ButtonToTop from "@/components/ButtonToTop";
-import Footer from "@/components/Footer";
-import Header from "@/components/Header";
-import Newsletter from "@/components/Newsletter";
+import ConditionalLayout from "@/components/ConditionalLayout";
 import type { Metadata } from "next";
 import { Open_Sans } from "next/font/google";
 import localFont from "next/font/local";
@@ -60,11 +57,7 @@ export default function RootLayout({
         className={`${openSans.variable} ${moonTime.variable} antialiased text-primary bg-background text-base md:text-xl font-serif`}
         suppressHydrationWarning
       >
-        <Header />
-        {children}
-        <ButtonToTop />
-        <Newsletter />
-        <Footer />
+        <ConditionalLayout>{children}</ConditionalLayout>
       </body>
     </html>
   );
