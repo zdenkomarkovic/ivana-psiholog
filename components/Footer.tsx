@@ -1,7 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { Mail, Phone, MapPin } from "lucide-react";
+import { Mail, MapPin } from "lucide-react";
 import Image from "@/node_modules/next/image";
 import logowhite from "../public/logowhite.png";
 
