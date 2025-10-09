@@ -82,15 +82,6 @@ export default function Footer() {
           <div className="text-center">
             <h3 className=" font-bold mb-2 md:mb-4 text-background">Kontakt</h3>
             <ul className="space-y-1 md:space-y-3 w-fit mx-auto">
-              <li className="flex items-center gap-2">
-                <Phone className="w-5 h-5 flex-shrink-0" />
-                <a
-                  href="tel:+381628190812"
-                  className="hover:text-muted  transition-colors duration-300"
-                >
-                  +381 62 819 0812
-                </a>
-              </li>
               <li className="flex items-start gap-2">
                 <Mail className="w-5 h-5 flex-shrink-0 mt-1" />
                 <a
@@ -102,7 +93,7 @@ export default function Footer() {
               </li>
               <li className="flex items-start gap-2">
                 <MapPin className="w-5 h-5 flex-shrink-0 mt-1" />
-                <span>Beograd, Srbija</span>
+                <span>Pančevo, Srbija</span>
               </li>
             </ul>
           </div>

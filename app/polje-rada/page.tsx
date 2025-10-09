@@ -131,14 +131,6 @@ export default function PoljeRada() {
               >
                 ivanapericin@yahoo.com
               </a>{" "}
-              <br /> ili telefona{" "}
-              <a
-                href="tel:+381628190812"
-                className="underline font-semibold hover:text-accent transition-colors"
-              >
-                +381 62 819 0812
-              </a>
-              .
             </p>
           </div>{" "}
         </div>

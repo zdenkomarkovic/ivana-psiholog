@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     "karijerno savetovanje",
   ],
   alternates: {
-    canonical: "https://www.ivanapsiholog.rs/",
+    canonical: "https://ivanapericin.rs/",
   },
 };
 
