@@ -7,11 +7,11 @@ export default function ContactInfo() {
         <h3 className="font-semibold text-lg mb-1">Email</h3>
         <div className="flex justify-center gap-2 items-center">
           <a
-            href="mailto:ivanapericin@yahoo.com"
+            href="mailto:ivanapericin.savetovanje@gmail.com"
             className="flex gap-2 items-center text-primary hover:text-secondary  hover:scale-105 transition-transform duration-300"
           >
             <Mail className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
-            ivanapericin@yahoo.com
+            ivanapericin.savetovanje@gmail.com
           </a>
         </div>
       </div>

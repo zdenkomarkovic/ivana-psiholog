@@ -126,10 +126,10 @@ export default function PoljeRada() {
               </a>
               , <br /> email-a{" "}
               <a
-                href="mailto:ivanapericin@yahoo.com"
+                href="mailto:ivanapericin.savetovanje@gmail.com"
                 className="underline font-semibold hover:text-accent transition-colors"
               >
-                ivanapericin@yahoo.com
+                ivanapericin.savetovanje@gmail.com
               </a>{" "}
             </p>
           </div>{" "}
