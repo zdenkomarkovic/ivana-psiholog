@@ -4,6 +4,7 @@ import { client } from "@/lib/sanity";
 import { urlFor } from "@/lib/sanityImage";
 import { PortableText } from "@portabletext/react";
 import { notFound } from "next/navigation";
+import ShareButton from "@/components/ShareButton";
 
 interface SanityImage {
   asset: {
@@ -47,6 +48,52 @@ async function getBlog(slug: string): Promise<Blog | null> {
   }`;
 
   return await client.fetch(query, { slug });
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}) {
+  const { slug } = await params;
+  const blog = await getBlog(slug);
+
+  if (!blog) {
+    return {};
+  }
+
+  const url = `${process.env.NEXT_PUBLIC_SITE_URL || "https://ivana-psiholog.com"}/blog/${slug}`;
+  const imageUrl = blog.mainImage
+    ? urlFor(blog.mainImage).width(1200).url()
+    : "";
+
+  return {
+    title: blog.title,
+    description: blog.excerpt,
+    openGraph: {
+      title: blog.title,
+      description: blog.excerpt,
+      url: url,
+      type: "article",
+      images: imageUrl
+        ? [
+            {
+              url: imageUrl,
+              width: 1200,
+              height: 630,
+              alt: blog.title,
+            },
+          ]
+        : [],
+      publishedTime: blog.publishedAt,
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: blog.title,
+      description: blog.excerpt,
+      images: imageUrl ? [imageUrl] : [],
+    },
+  };
 }
 
 export default async function BlogPost({
@@ -112,13 +159,16 @@ export default async function BlogPost({
             Nazad na blog
           </Link>
           <h1 className="text-4xl md:text-5xl font-bold mb-6">{blog.title}</h1>
-          <p className="text-sm mb-8">
-            {new Date(blog.publishedAt).toLocaleDateString("sr-RS", {
-              day: "numeric",
-              month: "long",
-              year: "numeric",
-            })}
-          </p>
+          <div className="flex items-center justify-between">
+            <p className="text-sm">
+              {new Date(blog.publishedAt).toLocaleDateString("sr-RS", {
+                day: "numeric",
+                month: "long",
+                year: "numeric",
+              })}
+            </p>
+            <ShareButton title={blog.title} slug={slug} />
+          </div>
         </div>
       </div>
 
@@ -137,9 +187,13 @@ export default async function BlogPost({
                   normal: ({ children }) => <p className=" ">{children}</p>,
                 },
                 marks: {
-                  strong: ({ children }) => <strong className="font-bold">{children}</strong>,
+                  strong: ({ children }) => (
+                    <strong className="font-bold">{children}</strong>
+                  ),
                   em: ({ children }) => <em className="italic">{children}</em>,
-                  underline: ({ children }) => <u className="underline">{children}</u>,
+                  underline: ({ children }) => (
+                    <u className="underline">{children}</u>
+                  ),
                 },
                 list: {
                   bullet: ({ children }) => (
