@@ -18,7 +18,7 @@ export default function HeroSection() {
 
       <div className="relative px-4 md:px-8 w-[80rem] mx-auto">
         <AnimatedSection>
-          <div className="w-1/2 mb-24">
+          <div className="w-1/2 md:w-2/5 mb-24">
             <p className="text-white  md:text-2xl md:text-justify md:pr-5">
               <Quote
                 className="inline text-muted align-text-top mr-1"
@@ -33,7 +33,7 @@ export default function HeroSection() {
                 size={16}
               />
             </p>
-            <p className="text-muted font-moontime text-2xl md:text-5xl text-right pr-5">
+            <p className="text-muted font-moontime text-3xl md:text-5xl text-right pr-5">
               Seren Kjerkegor
             </p>
           </div>

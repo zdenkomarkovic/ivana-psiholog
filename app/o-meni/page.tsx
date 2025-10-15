@@ -14,8 +14,8 @@ export default function OMeni() {
         imageAlt="Ivana Peričin"
       />
 
-      <div className="max-w-[80rem] space-y-6 mx-auto px-4 md:px-8 py-8 md:py-16 flex gap-5">
-        <div className="min-w-[370px] h-[330px]  relative">
+      <div className="max-w-[80rem] space-y-6 mx-auto px-4 md:px-8 py-8 md:py-16 flex flex-col md:flex-row md:gap-5">
+        <div className="w-full h-[180px]  md:min-w-[370px] md:h-[330px]  relative">
           <Image
             src={"/images/bg.jpg"}
             fill
@@ -24,7 +24,7 @@ export default function OMeni() {
           />
           <div className="absolute inset-0 bg-background/70" />
           <div className=" absolute px-4 pt-5  h-full flex flex-col justify-center">
-            <p className=" md:text-2xl pb-2 border-r border-muted">
+            <p className=" md:text-2xl pb-2 pr-5 border-r border-muted">
               <Quote
                 className="inline text-muted align-text-top mr-1"
                 size={16}
@@ -37,7 +37,7 @@ export default function OMeni() {
                 size={16}
               />
             </p>
-            <p className="text-muted font-moontime text-2xl md:text-5xl text-right md:pr-5 border-r border-muted">
+            <p className="text-muted font-moontime text-3xl md:text-5xl text-right pr-5 border-r border-muted">
               Viktor Frankl
             </p>
           </div>
@@ -96,7 +96,7 @@ export default function OMeni() {
                 size={16}
               />
             </p>
-            <p className="text-muted font-moontime text-2xl md:text-5xl text-right pr-5">
+            <p className="text-muted font-moontime text-3xl md:text-5xl text-right pr-5">
               Fridrih Nice
             </p>
           </div>

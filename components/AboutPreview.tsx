@@ -52,7 +52,7 @@ export default function AboutPreview() {
                 size={16}
               />
             </p>
-            <p className="text-muted font-moontime text-2xl md:text-5xl text-right md:pr-5">
+            <p className="text-muted font-moontime text-3xl md:text-5xl text-right pr-10">
               Leonard Cohen
             </p>
           </div>
