@@ -1,5 +1,6 @@
 import Image from "next/image";
 import AnimatedSection from "./AnimatedSection";
+import { Quote } from "lucide-react";
 
 export default function HeroSection() {
   return (
@@ -17,7 +18,19 @@ export default function HeroSection() {
 
       <div className="relative px-4 md:px-8 w-[80rem] mx-auto md:mb-">
         <AnimatedSection>
-          {" "}
+          <div className="w-1/2 mb-24">
+            <p className="text-white text-2xl text-justify">
+              <Quote className="inline align-text-top mr-1" size={16} />
+              <span className="italic">
+                Postati ono što jesi, to je težak, ali jedini zadatak dostojan
+                čoveka.
+              </span>
+              <Quote className="inline align-text-top ml-1" size={16} />
+            </p>
+            <p className="text-muted font-moontime text-5xl text-right">
+              Seren Kjerkegor
+            </p>
+          </div>
           <h1 className="text-5xl md:text-8xl text-background mb-6">
             Put ka sebi
           </h1>

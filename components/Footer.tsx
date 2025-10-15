@@ -1,7 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { Mail, MapPin } from "lucide-react";
+import { Mail, MapPin, Instagram } from "lucide-react";
 import Image from "@/node_modules/next/image";
 import logowhite from "../public/logowhite.png";
 
@@ -89,6 +89,15 @@ export default function Footer() {
                   className="hover:text-muted  transition-colors duration-300"
                 >
                   ivanapericin.savetovanje@gmail.com
+                </a>
+              </li>
+              <li className="flex items-start gap-2">
+                <Instagram className="w-5 h-5 flex-shrink-0 mt-1" />
+                <a
+                  href="https://www.instagram.com/ivanapericin_path.to.self/"
+                  className="hover:text-muted  transition-colors duration-300"
+                >
+                  ivanapericin_path.to.self
                 </a>
               </li>
               <li className="flex items-start gap-2">
