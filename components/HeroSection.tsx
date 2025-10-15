@@ -16,18 +16,24 @@ export default function HeroSection() {
         <div className="absolute inset-0 bg-primary/40" />
       </div>
 
-      <div className="relative px-4 md:px-8 w-[80rem] mx-auto md:mb-">
+      <div className="relative px-4 md:px-8 w-[80rem] mx-auto">
         <AnimatedSection>
           <div className="w-1/2 mb-24">
-            <p className="text-white text-2xl text-justify">
-              <Quote className="inline align-text-top mr-1" size={16} />
+            <p className="text-white  md:text-2xl md:text-justify md:pr-5">
+              <Quote
+                className="inline text-muted align-text-top mr-1"
+                size={16}
+              />
               <span className="italic">
                 Postati ono što jesi, to je težak, ali jedini zadatak dostojan
                 čoveka.
               </span>
-              <Quote className="inline align-text-top ml-1" size={16} />
+              <Quote
+                className="inline text-muted align-text-top ml-1"
+                size={16}
+              />
             </p>
-            <p className="text-muted font-moontime text-5xl text-right">
+            <p className="text-muted font-moontime text-2xl md:text-5xl text-right pr-5">
               Seren Kjerkegor
             </p>
           </div>

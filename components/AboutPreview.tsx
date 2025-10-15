@@ -1,5 +1,6 @@
 import Image from "@/node_modules/next/image";
 import Link from "next/link";
+import { Quote } from "lucide-react";
 
 export default function AboutPreview() {
   return (
@@ -37,6 +38,24 @@ export default function AboutPreview() {
           >
             Saznaj više
           </Link>
+          <div className=" px-4 pt-5 ">
+            <p className=" md:text-2xl pb-2">
+              <Quote
+                className="inline text-muted align-text-top mr-1"
+                size={16}
+              />
+              <span className="italic">
+                Postoji pukotina u svemu, tako ulazi svetlost.
+              </span>
+              <Quote
+                className="inline text-muted align-text-top ml-1"
+                size={16}
+              />
+            </p>
+            <p className="text-muted font-moontime text-2xl md:text-5xl text-right md:pr-5">
+              Leonard Cohen
+            </p>
+          </div>
         </div>
       </div>
     </section>

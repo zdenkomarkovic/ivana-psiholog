@@ -1,6 +1,8 @@
 import ProfileSection from "@/components/ProfileSection";
 import QuoteBox from "@/components/QuoteBox";
 import PageHero from "@/components/PageHero";
+import { Quote } from "lucide-react";
+import Image from "@/node_modules/next/image";
 
 export default function OMeni() {
   return (
@@ -12,24 +14,53 @@ export default function OMeni() {
         imageAlt="Ivana Peričin"
       />
 
-      <div className="max-w-[80rem] space-y-6 mx-auto px-4 md:px-8 py-8 md:py-16">
-        <p className="leading-relaxed">
-          Svoje akademsko putovanje započela sam kroz antropologiju, da bih
-          nakon diplomiranja nastavila dalje usavršavanje u oblastima
-          psihologije i filozofije. Oduvek me je fascinirao psihološki razvoj
-          čoveka kroz vreme i različite društvene kontekste, pa me je upravo ta
-          strast prirodno odvela u svet psihoterapije.
-        </p>
-        <p className="leading-relaxed">
-          Tokom master studija iz primenjene psihologije upoznajem se sa
-          integrativnom psihoterapijom, što je obeležilo moj dalji profesionalni
-          pravac. Danas radim kao regionalni HR menadžer za Zapadni Balkan i kao
-          psihoterapeut.
-        </p>
-        <p className="leading-relaxed">
-          Moja ljubav prema psihoterapiji motivisala me je da osnujem psihološko
-          savetovalište <strong>Put ka sebi</strong>.
-        </p>
+      <div className="max-w-[80rem] space-y-6 mx-auto px-4 md:px-8 py-8 md:py-16 flex gap-5">
+        <div className="min-w-[370px] h-[330px]  relative">
+          <Image
+            src={"/images/bg.jpg"}
+            fill
+            alt=""
+            className=" w-full h-full object-cover "
+          />
+          <div className="absolute inset-0 bg-background/70" />
+          <div className=" absolute px-4 pt-5  h-full flex flex-col justify-center">
+            <p className=" md:text-2xl pb-2 border-r border-muted">
+              <Quote
+                className="inline text-muted align-text-top mr-1"
+                size={16}
+              />
+              <span className="italic">
+                Čovek traži smisao, dok ne shvati da je on taj koji ga stvara.
+              </span>
+              <Quote
+                className="inline text-muted align-text-top ml-1"
+                size={16}
+              />
+            </p>
+            <p className="text-muted font-moontime text-2xl md:text-5xl text-right md:pr-5 border-r border-muted">
+              Viktor Frankl
+            </p>
+          </div>
+        </div>{" "}
+        <div>
+          <p className="leading-relaxed">
+            Svoje akademsko putovanje započela sam kroz antropologiju, da bih
+            nakon diplomiranja nastavila dalje usavršavanje u oblastima
+            psihologije i filozofije. Oduvek me je fascinirao psihološki razvoj
+            čoveka kroz vreme i različite društvene kontekste, pa me je upravo
+            ta strast prirodno odvela u svet psihoterapije.
+          </p>
+          <p className="leading-relaxed">
+            Tokom master studija iz primenjene psihologije upoznajem se sa
+            integrativnom psihoterapijom, što je obeležilo moj dalji
+            profesionalni pravac. Danas radim kao regionalni HR menadžer za
+            Zapadni Balkan i kao psihoterapeut.
+          </p>
+          <p className="leading-relaxed">
+            Moja ljubav prema psihoterapiji motivisala me je da osnujem
+            psihološko savetovalište <strong>Put ka sebi</strong>.
+          </p>{" "}
+        </div>
       </div>
       <div className="mb-8 md:mb-16 bg-[#484039] py-8 md:py-16">
         <ProfileSection
@@ -51,6 +82,24 @@ export default function OMeni() {
             potencijala. Tako je započela ova priča, kao posledica i kao
             motivacija da pronađemo sebe i vratimo se sebi.
           </p>
+          <div className=" pt-4">
+            <p className=" md:text-2xl  ">
+              <Quote
+                className="inline text-muted align-text-top mr-1"
+                size={16}
+              />
+              <span className="italic text-white">
+                Onaj koji ima zašto, može da podnese gotovo svako kako.
+              </span>
+              <Quote
+                className="inline text-muted align-text-top ml-1"
+                size={16}
+              />
+            </p>
+            <p className="text-muted font-moontime text-2xl md:text-5xl text-right pr-5">
+              Fridrih Nice
+            </p>
+          </div>
         </ProfileSection>
       </div>
       <div className="mb-8 md:mb-16 max-w-7xl mx-auto px-4 md:px-8">
