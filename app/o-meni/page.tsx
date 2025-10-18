@@ -82,24 +82,6 @@ export default function OMeni() {
             potencijala. Tako je započela ova priča, kao posledica i kao
             motivacija da pronađemo sebe i vratimo se sebi.
           </p>
-          <div className=" pt-4">
-            <p className=" md:text-2xl  ">
-              <Quote
-                className="inline text-muted align-text-top mr-1"
-                size={16}
-              />
-              <span className="italic text-white">
-                Onaj koji ima zašto, može da podnese gotovo svako kako.
-              </span>
-              <Quote
-                className="inline text-muted align-text-top ml-1"
-                size={16}
-              />
-            </p>
-            <p className="text-muted font-moontime text-3xl md:text-5xl text-right pr-5">
-              Fridrih Nice
-            </p>
-          </div>
         </ProfileSection>
       </div>
       <div className="mb-8 md:mb-16 max-w-7xl mx-auto px-4 md:px-8">
