@@ -48,7 +48,7 @@ export default function Testimonials() {
     <section className="py-10 md:py-20 bg-background">
       <div className="max-w-[80rem] mx-auto px-0 md:px-8">
         <h2 className="text-4xl md:text-5xl font-bold text-primary text-center mb-10 md:mb-16">
-          Šta kažu o radu sa mnom
+          Utisci o saradnji sa mnom
         </h2>
 
         <div className="relative px-4 md:px-16">
