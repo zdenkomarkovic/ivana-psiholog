@@ -17,6 +17,9 @@ interface Blog {
   publishedAt: string;
 }
 
+// Revalidate stranice svakih 60 sekundi
+export const revalidate = 60;
+
 async function getBlogs(): Promise<Blog[]> {
   const query = `*[_type == "blog"] | order(publishedAt desc) {
     title,

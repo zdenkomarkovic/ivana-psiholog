@@ -37,6 +37,9 @@ interface Child {
   [key: string]: unknown;
 }
 
+// Revalidate stranice svakih 60 sekundi
+export const revalidate = 60;
+
 async function getBlog(slug: string): Promise<Blog | null> {
   const query = `*[_type == "blog" && slug.current == $slug][0] {
     title,
