@@ -1,5 +1,7 @@
+import { ReactNode } from "react";
+
 interface BulletListProps {
-  items: string[];
+  items: ReactNode[];
   title?: string;
 }
 

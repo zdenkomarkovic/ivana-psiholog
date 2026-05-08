@@ -18,6 +18,7 @@ const terapijskeTeme = [
   "Osećanja krivice i stida",
   "Postavljanje ciljeva",
   "Donošenje odluka",
+  "Emocionalni faktori u regulaciji telesne težine",
 ];
 const poslovniTitle = "Poslovno savetovanje";
 
@@ -28,6 +29,11 @@ const poslovnoSavetovanje = [
   "Rešavanje konflikata (PEACE metoda i DILEMMA trening)",
   "Donošenje odluka",
   "Postavljanje profesionalnih ciljeva",
+  <>
+    Psihološka procena zaposlenih razgovorom<sup>1</sup>
+  </>,
+  "Kreiranje strategija prepoznavanja, razvoja i zadržavanja zaposlenih (talent management)",
+  "Upravljanje procesom sistematizacije: postavljanje jasne organizacione strukture, definisanje radnih mesta i odgovornosti i njihovo uskladjivanje sa ciljevima kompanije",
 ];
 
 const wellbeingUsluge = [
@@ -68,7 +74,7 @@ export default function PoljeRada() {
             imageSrc="/images/corporate-business-handshake-business-partners.jpg"
             imageAlt="Poslovno savetovanje"
             imagePosition="right"
-            imageAspect=""
+            imageAspect="aspect-square md:aspect-[10/13]"
             mobileImageFirst={false}
           >
             {" "}
