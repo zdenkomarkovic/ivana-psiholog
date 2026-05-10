@@ -1,30 +1,30 @@
 import Link from "next/link";
 import Image from "next/image";
+import { client } from "@/lib/sanity";
+import { urlFor } from "@/lib/sanityImage";
 
-const saradnici = [
-  {
-    naziv: "Nutricionističko savetovalište Biljana Mladenović",
-    url: "https://nutricionistabiljana.com/",
-    logo: "/biljana.png",
-  },
-  {
-    naziv: "Med Medik ordinacija",
-    url: "https://www.medmedik.rs/",
-    logo: "/MedMedik.png",
-  },
-  {
-    naziv: "Institut za praktičnu humanistiku",
-    url: "https://iph.edu.rs/",
-    logo: "/institut.gif",
-  },
-  {
-    naziv: "Edumaris – Centar za ishranu",
-    url: "https://edumaris.rs/",
-    logo: "/edumaris.PNG",
-  },
-];
+interface SanityImage {
+  asset: { _ref: string; _type: string };
+}
 
-export default function SaradniciSection() {
+interface Saradnik {
+  naziv: string;
+  url: string;
+  logo: SanityImage;
+}
+
+async function getSaradnici(): Promise<Saradnik[]> {
+  const query = `*[_type == "saradnik"] | order(redosled asc) {
+    naziv,
+    url,
+    logo
+  }`;
+  return client.fetch(query);
+}
+
+export default async function SaradniciSection() {
+  const saradnici = await getSaradnici();
+
   return (
     <section className="py-10 md:py-20 bg-muted">
       <div className="max-w-[80rem] mx-auto px-4 md:px-8">
@@ -43,7 +43,7 @@ export default function SaradniciSection() {
             >
               <div className="relative w-full h-32">
                 <Image
-                  src={s.logo}
+                  src={urlFor(s.logo).width(400).url()}
                   alt={s.naziv}
                   fill
                   className="object-contain"
