@@ -1,7 +1,7 @@
 import HeroSection from "@/components/HeroSection";
 import AboutPreview from "@/components/AboutPreview";
 import ServicesSection from "@/components/ServicesSection";
-import GostovanjaSection from "@/components/GostovanjaSection";
+import GostovanjaSectionServer from "@/components/GostovanjaSectionServer";
 import SaradniciSection from "@/components/SaradniciSection";
 import Testimonials from "@/components/Testimonials";
 import BlogPreview from "@/components/BlogPreview";
@@ -13,7 +13,7 @@ export default function Home() {
       <HeroSection />
       <AboutPreview />
       <ServicesSection />
-      <GostovanjaSection />
+      <GostovanjaSectionServer />
       <SaradniciSection />
       <Testimonials />
       <BlogPreview />
