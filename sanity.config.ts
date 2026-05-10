@@ -17,6 +17,8 @@ export default defineConfig({
           .title('Sadržaj')
           .items([
             S.documentTypeListItem('blog').title('Blog'),
+            S.documentTypeListItem('gostovanje').title('Gostovanja'),
+            S.documentTypeListItem('saradnik').title('Saradnici'),
           ]),
     }),
   ],
