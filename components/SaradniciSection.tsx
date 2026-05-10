@@ -8,6 +8,7 @@ interface SanityImage {
 }
 
 interface Saradnik {
+  _id: string;
   naziv: string;
   url: string;
   logo: SanityImage;
@@ -15,6 +16,7 @@ interface Saradnik {
 
 async function getSaradnici(): Promise<Saradnik[]> {
   const query = `*[_type == "saradnik"] | order(redosled asc) {
+    _id,
     naziv,
     url,
     logo
@@ -23,7 +25,13 @@ async function getSaradnici(): Promise<Saradnik[]> {
 }
 
 export default async function SaradniciSection() {
-  const saradnici = await getSaradnici();
+  let saradnici: Saradnik[] = [];
+  try {
+    saradnici = await getSaradnici();
+  } catch (e) {
+    console.error('Failed to fetch saradnici:', e);
+  }
+  if (saradnici.length === 0) return null;
 
   return (
     <section className="py-10 md:py-20 bg-muted">
@@ -35,7 +43,7 @@ export default async function SaradniciSection() {
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {saradnici.map((s) => (
             <Link
-              key={s.url}
+              key={s._id}
               href={s.url}
               target="_blank"
               rel="noopener noreferrer"

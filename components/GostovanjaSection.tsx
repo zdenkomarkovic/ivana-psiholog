@@ -38,11 +38,13 @@ interface Props {
 }
 
 export default function GostovanjaSection({ gostovanja }: Props) {
-  const parsed: Parsed[] = gostovanja.map((g) => ({
-    naziv: g.naziv,
-    youtubeUrl: g.youtubeUrl,
-    ...parseYouTubeUrl(g.youtubeUrl),
-  }));
+  const parsed: Parsed[] = gostovanja
+    .map((g) => ({
+      naziv: g.naziv,
+      youtubeUrl: g.youtubeUrl,
+      ...parseYouTubeUrl(g.youtubeUrl),
+    }))
+    .filter((g) => g.videoId !== '');
 
   const [active, setActive] = useState<Parsed | null>(null);
 

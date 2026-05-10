@@ -11,6 +11,12 @@ async function getGostovanja(): Promise<GostovanjeData[]> {
 }
 
 export default async function GostovanjaSectionServer() {
-  const gostovanja = await getGostovanja();
+  let gostovanja: GostovanjeData[] = [];
+  try {
+    gostovanja = await getGostovanja();
+  } catch (e) {
+    console.error('Failed to fetch gostovanja:', e);
+  }
+  if (gostovanja.length === 0) return null;
   return <GostovanjaSection gostovanja={gostovanja} />;
 }
