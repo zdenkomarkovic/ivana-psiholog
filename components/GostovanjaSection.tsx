@@ -3,37 +3,48 @@
 import Image from "next/image";
 import { useState, useEffect } from "react";
 
-const gostovanja = [
-  {
-    naziv: "Podcast Nutrimedicina",
-    url: "https://www.youtube.com/watch?v=ZUf4kd4KG-4&t=1299s",
-    videoId: "ZUf4kd4KG-4",
-    startTime: 1299,
-  },
-  {
-    naziv: "Žena za sva vremena",
-    url: "https://www.youtube.com/watch?v=Xi_6cOwGUZ0&t=250s",
-    videoId: "Xi_6cOwGUZ0",
-    startTime: 250,
-  },
-  {
-    naziv: "Agro ordinacija",
-    url: "https://www.youtube.com/watch?v=MLnqY_IhACA&t=548s",
-    videoId: "MLnqY_IhACA",
-    startTime: 548,
-  },
-  {
-    naziv: "Hajde da razgovaramo",
-    url: "https://www.youtube.com/watch?v=2yxndfjvEY8&t=322s",
-    videoId: "2yxndfjvEY8",
-    startTime: 322,
-  },
-];
+export interface GostovanjeData {
+  naziv: string;
+  youtubeUrl: string;
+  redosled: number;
+}
 
-type Gostovanje = (typeof gostovanja)[number];
+interface Parsed {
+  naziv: string;
+  youtubeUrl: string;
+  videoId: string;
+  startTime: number;
+}
 
-export default function GostovanjaSection() {
-  const [active, setActive] = useState<Gostovanje | null>(null);
+function parseYouTubeUrl(url: string): { videoId: string; startTime: number } {
+  try {
+    const u = new URL(url);
+    let videoId = '';
+    if (u.hostname === 'youtu.be') {
+      videoId = u.pathname.slice(1).split('?')[0];
+    } else {
+      videoId = u.searchParams.get('v') ?? '';
+    }
+    const t = u.searchParams.get('t') ?? '0';
+    const startTime = parseInt(t.replace(/[^0-9]/g, ''), 10) || 0;
+    return { videoId, startTime };
+  } catch {
+    return { videoId: '', startTime: 0 };
+  }
+}
+
+interface Props {
+  gostovanja: GostovanjeData[];
+}
+
+export default function GostovanjaSection({ gostovanja }: Props) {
+  const parsed: Parsed[] = gostovanja.map((g) => ({
+    naziv: g.naziv,
+    youtubeUrl: g.youtubeUrl,
+    ...parseYouTubeUrl(g.youtubeUrl),
+  }));
+
+  const [active, setActive] = useState<Parsed | null>(null);
 
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
@@ -62,7 +73,7 @@ export default function GostovanjaSection() {
           </p>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {gostovanja.map((g) => (
+            {parsed.map((g) => (
               <button
                 key={g.videoId}
                 onClick={() => setActive(g)}
@@ -116,7 +127,6 @@ export default function GostovanjaSection() {
         </div>
       </section>
 
-      {/* Lightbox modal */}
       {active && (
         <div
           className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-sm p-4"
