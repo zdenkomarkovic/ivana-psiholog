@@ -23,7 +23,7 @@ export default defineType({
       title: 'Redosled',
       type: 'number',
       description: 'Manji broj = prikazuje se prvi',
-      validation: (Rule) => Rule.required().integer().positive(),
+      validation: (Rule) => Rule.required().integer(),
     }),
   ],
   preview: {
